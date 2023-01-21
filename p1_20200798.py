@@ -40,4 +40,5 @@ def decrypt_text(C0, C1):
         t -= 1
     print("".join(map(chr, plaintext)))
 
-decrypt_text(sys.argv[1], sys.argv[2])
+if __name__=='__main__':
+    decrypt_text(sys.argv[1], sys.argv[2])
