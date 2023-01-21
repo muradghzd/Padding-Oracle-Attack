@@ -47,6 +47,7 @@ def encrypt_plaintext(text):
         ciphertext = bytearray_to_hex(arr[i])
     return arr
 
-a = encrypt_plaintext(sys.argv[1])
-b = [bytearray_to_hex(i) for i in a]
-print(*b)
+if __name__=='__main__':
+    a = encrypt_plaintext(sys.argv[1])
+    b = [bytearray_to_hex(i) for i in a]
+    print(*b)
